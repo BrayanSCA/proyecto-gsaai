@@ -1,0 +1,274 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+html {
+    height: 100%;
+}
+
+main {
+    padding: 1.2em;
+    padding-bottom: 40px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background-color: #598C26;
+    height: 60px;
+}
+
+.logo-sys {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 60px;
+    border-radius: 5px;
+}
+
+.logo-sys p {
+    font-family: 'Fredoka One', cursive;
+    color: white;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+}
+
+.container1 {
+    background-color: #598C26;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+    padding: 1em;
+    margin-bottom: 1.5em;
+}
+
+.usuario{
+    align-self: center;
+    width: 80px;
+    height: 88px;
+}
+
+.usuario img {
+    width: 80px;
+    border-radius: 50%;
+}
+
+.header {
+    text-align: center;
+}
+
+.cerrar_sesion {
+    padding-top: 5px;
+}
+
+.cerrar_sesion img {
+    width: 25px;
+}
+
+.cerrar_sesion img:hover {
+    box-shadow: #324001;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+}
+
+.menu {
+    box-shadow: 1px 1px 4px rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    background-color: #E4E4E4;
+    margin-top: 10px;
+}
+
+.menu p {
+    text-align: center;
+    padding: 10px;
+    background-color: #598C26;
+    border-radius: 10px 10px 0px 0px;
+    color: white;
+}
+
+.cont_botones_menu {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu button {
+    width: 90%;
+    height: 30px;
+    background-color: #2C4018;
+    border-radius: 5px;
+    text-align: left;
+    padding: 2px 0px 2px 12%;
+    color: white;
+}
+
+.btn_menu1, .btn_menu2, .btn_menu3, .btn_menu4,
+.btn_menu5, .btn_menu6 {
+    background-image: url(/icons/mp.svg);
+    background-repeat: no-repeat;
+    background-position: 3% center;
+    margin-bottom: 3px;
+}
+
+.btn_menu2 {
+    background-image: url(/icons/cp.svg);
+}
+
+.btn_menu3 {
+    background-image: url(/icons/sta.svg);
+}
+
+.btn_menu4 {
+    background-image: url(/icons/bita.svg);
+}
+
+.btn_menu5 {
+    background-image: url(/icons/abon.svg);
+}
+
+.btn_menu6 {
+    background-image: url(/icons/insu.svg);
+}
+
+.btn_menu1:hover, .btn_menu2:hover, .btn_menu3:hover, .btn_menu4:hover,
+.btn_menu5:hover, .btn_menu6:hover {
+    background-color: #598C26;
+}
+
+.content_btn {    
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.btn_atras {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 20px;
+    text-align: center;
+    background-color: #2C4018;
+    padding: 0px 5px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+    margin-top: 30px;
+    color: white;
+}
+
+.btn_atras:hover {
+    background-color: #598C26;
+}
+
+.pantalla {
+    background-color: #E4E4E4;
+    border-radius: 10px;
+}
+
+.pantalla p {
+    background-color: #598C26;
+    text-align: center;
+    border-radius: 10px 10px 0px 0px;
+    color: white;
+    padding: 10px;
+}
+
+.mapa {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 16px;
+}
+
+.content_btn_zona {
+    margin-bottom: 8px;
+
+}
+
+.btn_zona {
+    background-color: #2C4018;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90px;
+    height: 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    padding: 0px 5px;
+}
+
+.btn_zona:hover {
+    background-color: #598C26;
+}
+
+.container3 {
+    border-radius: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.titulo_container3 {
+    background-color: #598C26;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px;
+}
+
+.lista_tareas {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    background-color: #E4E4E4;
+    border-radius: 10px;
+}
+
+.content_check {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    padding: 0px 5px;
+    margin-bottom: 3px;
+    color: white;
+    background-color: #2C4018;
+}
+
+footer {
+    background-color: #598C26;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 50px;
+}
+
+footer a {
+    display: flex;
+    align-items: center;
+}
+@media (max-width: 600px){
+
+  
+}
