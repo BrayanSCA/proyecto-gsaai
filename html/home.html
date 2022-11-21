@@ -8,8 +8,8 @@
     <title>Home GSAAI</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/stylehome.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="/css/home.css">
 </head>
 
 <body>
@@ -25,27 +25,29 @@
         </div>
     </nav>
     <main>
-        <!--panel usuario-->
+        <!--parte superior de la pantalla-->
         <section class="section1">
+            <!--contenedor del panel de usuario-->
             <div class="container1">
-                <!--foto de usuario-->
-                <div id="usuario">
-                    <img src="/icons/ava-men2.svg" width="150px" height="164px">
+                <!--contenedor de foto, texto y boton de cerrar sesión-->
+                <div class="sub_contenedor">
+                    <!--foto de usuario-->
+                    <div class="usuario">
+                        <img src="/icons/ava-men2.svg">
+                    </div>
+
+                    <!--datos principales usuario-->
+                    <header class="header">
+                        <h4>Nombre de usuario</h4>
+                        <p class="rol">Administrador</p>
+                        <p>Inicio de sesión: <br> 20/02/2020 07:00 am</p>
+                    </header>
+                    <!--botón cerrar sesión-->
+                    <div class="cerrar_sesion">
+                        <img src="/icons/power.svg">
+                    </div>
                 </div>
-                <!--logo sistema en móviles-->
-                <div id="logo-sys">
-                    <img src="/icons/log-gsaai.png" width="50px">
-                </div>
-                <!--botón cerrar sesión-->
-                <div class="cerrar_sesion">
-                    <img src="/icons/power.svg" width="35px" height="35px">
-                </div>
-                <!--datos principales usuario-->
-                <header id="header">
-                    <h4>Nombre de usuario</h4>
-                    <p class="rol">Administrador</p>
-                    <p>Inicio de sesión: <br> 20/02/2020 07:00 am</p>
-                </header>
+                <!--contenedor para ordenar solo los botones del panel-->
                 <div class="botones">
                     <a href="https://www.google.com"><button>
                             <img src="/icons/engrane.svg">Configuración del sistema
@@ -63,8 +65,8 @@
             </div>
 
             <!--logo sistema en pc-->
-            <div id="logo-sys2">
-                <img src="/icons/log-gsaai.png" width="298px">
+            <div class="logo-sys2">
+                <img src="/icons/log-gsaai.png">
             </div>
         </section>
 
@@ -72,28 +74,28 @@
         <section class="section2">
             <div class="container3">
                 <!--Texto central-->
-                <div id="text-central">
+                <div class="text-central">
                     <h4>Seleccione módulo para ingresar</h4>
                 </div>
                 <!--Módulo 1-->
-                <div id="modulo1">
+                <div class="modulo1">
                     <!-- <img src="img/biofa.png" alt="biofabrica"> -->
                     <h2>Biofábrica</h2>
                 </div>
                 <!--Módulo 2-->
-                <div id="modulo2">
+                <div class="modulo2">
                     <!-- <img src="img/lombri.png" alt="lombricultivo"> -->
                     <h2>Lombricultura</h2>
                     <p>... en desarrollo</p>
                 </div>
                 <!--Módulo 3-->
-                <div id="modulo3">
+                <div class="modulo3">
                     <!-- <img src="img/respel.png" alt="respel"> -->
                     <h2>ResPel</h2>
                     <p>... en desarrollo</p>
                 </div>
                 <!--Módulo 4-->
-                <div id="modulo4">
+                <div class="modulo4">
                     <!-- <img src="img/laborat.png" alt="laboratorio"> -->
                     <h2>Laboratorio Aguas y Suelos</h2>
                     <p>... en desarrollo</p>

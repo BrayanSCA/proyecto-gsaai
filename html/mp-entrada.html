@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flujo materias primas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/mp-entrada.css">
+</head>
+
+<body>
+    <nav>
+        <!--logo sistema en móviles-->
+        <div class="logo-sys">
+            <p>GSAAI</p>
+        </div>
+
+        <div class="content_menu_h">
+            <img src="/icons/menu-h.svg" class="nav_img">
+        </div>
+    </nav>
+    <main>
+        <!--panel usuario-->
+        <div class="container1">
+            <!--foto de usuario-->
+            <div class="usuario">
+                <img src="/icons/ava-men2.svg" width="150px">
+            </div>
+
+
+            <!--datos principales usuario-->
+            <div class="header">
+                <h4>Nombre de usuario</h4>
+                <p class="rol">Administrador</p>
+                <p>Inicio de sesión:</p>
+                <p>20/02/2020 07:00 am</p>
+            </div>
+            <!--botón cerrar sesión-->
+            <div class="cerrar_sesion">
+                <img src="/icons/power.svg">
+            </div>
+        </div>
+
+        <!--cuadro entradas y salidas-->
+        <div class="container2">
+            <div class="ventanas">
+                <div class="ven_entrada">
+                    <p>entradas</p>
+                </div>
+                <div class="ven_salida">
+                    <p>salidas</p>
+                </div>
+            </div>
+            <div class="cod_entrada">
+                <label># Entrada:</label><input type="text" id="input_entrada">
+                <input type="date" class="input_fecha">
+            </div>
+            <form action="post" class="mp_entrada">
+                <div class="div_img_mp">
+                    <img src="/icons/mp.svg" class="img_mp">
+                </div>
+                <div class="div_subir_foto">
+                    <p>subir foto mp</p>
+                </div>
+                <div class="content_input">
+                    <label class="label_nombre">Nombre mp: </label>
+                    <select id="select_mp">
+                        <option>-Seleccione materia prima-</option>
+                        <option>Materia prima 1</option>
+                        <option>Materia prima 2</option>
+                        <option>Materia prima 3</option>
+                    </select>
+                </div>
+                <div class="content_input">
+                    <label for="" class="label_peso"> Peso (kg): </label>
+                    <input type="text" class="input_peso">
+                </div>
+                <div class="content_input">
+                    <label for="" class="label_procedencia">Procedencia: </label>
+                    <select id="select_procedencia">
+                        <option>Seleccione Procedencia-</option>
+                        <option>Procedencia 1</option>
+                        <option>Procedencia 2</option>
+                        <option>Procedencia 3</option>
+                    </select>
+                </div>
+                <div class="content_input">
+                    <label for="" class="label_stock">Stock: </label>
+                    <input type="text" class="input_stock" placeholder="und Kg">
+                </div>
+                <div class="content_input">
+                    <label for="" class="label_realcion_cn">Relación C/N: </label>
+                    <input type="text" class="input_relacion_cn">
+                </div>
+            </form>
+            <div class="content_agregar_mp">
+                <a href="#" class="link_agregar_mp">+</a>
+            </div>
+
+            <div class="calculo_cn">
+                <button>Calcular C/N</button>
+            </div>
+
+            <div class="div_enviar_datos">
+                <input type="submit" value="Enviar datos">
+            </div>
+
+            <div class="caja_btn_atras">
+                <div class="content_btn_atras">
+                    <a href="#" class="btn_atras"><img src="/icons/fl-izq.svg" class="icon_atras">atrás</a>
+                </div>
+            </div>
+    </main>
+    <footer>
+        <p>contacto:</p>
+        <a href="https://www.google.com"><img src="/icons/facebook.svg" class="img_footer"></a>
+        <a href="https://www.google.com"><img src="/icons/whatsapp.svg" class="img_footer"></a>
+        <a href="https://www.google.com"><img src="/icons/email.svg" class="img_footer"></a>
+    </footer>
+</body>
+
+</html>

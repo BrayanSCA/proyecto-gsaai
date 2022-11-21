@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conformación de pilas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/cp-nuevo.css">
+</head>
+
+<body>
+    <nav>
+        <!--logo sistema en móviles-->
+        <div class="logo-sys">
+            <p>GSAAI</p>
+        </div>
+
+        <div class="content_menu_h">
+            <img src="/icons/menu-h.svg" class="nav_img">
+        </div>
+    </nav>
+    <main>
+        <!--panel usuario-->
+        <div class="container1">
+            <!--foto de usuario-->
+            <div class="usuario">
+                <img src="/icons/ava-men2.svg" width="150px">
+            </div>
+
+
+            <!--datos principales usuario-->
+            <div class="header">
+                <h4>Nombre de usuario</h4>
+                <p class="rol">Administrador</p>
+                <p>Inicio de sesión:</p>
+                <p>20/02/2020 07:00 am</p>
+            </div>
+            <!--botón cerrar sesión-->
+            <div class="cerrar_sesion">
+                <img src="/icons/power.svg">
+            </div>
+        </div>
+
+        <!--cuadro nuevo, combinar, actualizar-->
+        <div class="container2">
+            <div class="ventanas">
+                <div class="ven_nuevo">
+                    <p>nuevo</p>
+                </div>
+                <div class="ven_combinar">
+                    <p>combinar</p>
+                </div>
+                <div class="ven_actualizar">
+                    <p>actualizar</p>
+                </div>
+            </div>
+            <div class="cod_entrada">
+                <label># Pila:</label><input type="text" id="input_entrada" placeholder="1">
+                <input type="date" class="input_fecha">
+            </div>
+            <form action="post" class="mp_entrada" autocomplete="off">
+                <div class="div_img_pila">
+                    <img src="/icons/mp.svg" class="img_pila">
+                </div>
+                <div class="div_subir_foto">
+                    <input type="file">
+                    <p>subir foto pila</p>
+                </div>
+                <div class="content_input">
+                    <label for="select_usuario">Responsable: </label>
+                    <select id="select_usuario">
+                        <option selected>-Seleccionar usuario-</option>
+                        <option value="1">Usuario ejemplo 1</option>
+                        <option value="2">Usuario ejemplo 2</option>
+                        <option value="3">Usuario ejemplo 3</option>
+                    </select>
+                </div>
+
+                <div class="content_input">
+                    <label for="select_procedencia" class="label_zona">Zona: </label>
+                    <select id="select_procedencia">
+                        <option selected>-Seleccione # Zona-</option>
+                        <option>Zona 1</option>
+                        <option>Zona 2</option>
+                        <option>Zona 3</option>
+                    </select>
+                </div>
+                <div class="content_input_observaciones">
+                    <label for="observaciones" class="label_observaciones">Observaciones: </label>
+                    <textarea name="observaciones" id="observaciones" maxlength="200" 
+                    cols="30" rows="10" placeholder="max. 200 caracteres"></textarea>
+                </div>
+                <div class="content_input">
+                    <label for="select_mp" class="label_stock">Materia prima: </label>
+                    <select id="select_mp">
+                        <option selected>-Seleccione MP-</option>
+                        <option>Heno</option>
+                        <option>Cascaras</option>
+                        <option>Bovinaza</option>
+                    </select>
+                </div>
+
+            </form>
+            <div class="content_table">
+                <table>
+                    <tr>
+                        <th>Nombre MP</th>
+                        <th>Peso (kg)</th>
+                        <th>C/N</th>
+                    </tr>
+                    <tr>
+                        <td>Heno</td>
+                        <td>16</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>Cascaras</td>
+                        <td>20</td>
+                        <td>30</td>
+                    </tr>
+                    <tr>
+                        <td>Bovinaza</td>
+                        <td>15</td>
+                        <td>18.5</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="div_enviar_datos">
+                <input type="submit" value="Enviar datos">
+            </div>
+
+            <div class="caja_btn_atras">
+                <div class="content_btn_atras">
+                    <a href="#" class="btn_atras"><img src="/icons/fl-izq.svg" class="icon_atras">atrás</a>
+                </div>
+            </div>
+    </main>
+    <footer>
+        <p>contacto:</p>
+        <a href="https://www.google.com"><img src="/icons/facebook.svg" class="img_footer"></a>
+        <a href="https://www.google.com"><img src="/icons/whatsapp.svg" class="img_footer"></a>
+        <a href="https://www.google.com"><img src="/icons/email.svg" class="img_footer"></a>
+    </footer>
+</body>
+
+</html>

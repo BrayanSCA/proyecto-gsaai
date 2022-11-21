@@ -1,0 +1,332 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+html {
+    height: 100%;
+}
+
+main {
+    padding: 1.2em;
+    padding-bottom: 40px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background-color: #598C26;
+    height: 60px;
+}
+
+.logo-sys {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 60px;
+    border-radius: 5px;
+}
+
+.logo-sys p {
+    font-family: 'Fredoka One', cursive;
+    color: white;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+}
+
+.section1 {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+ }
+
+.container1 {
+    background-color: #598C26;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+    padding: 16px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.sub_contenedor {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.usuario{
+    align-self: center;
+    width: 80px;
+    height: 88px;
+}
+
+.usuario img {
+    width: 80px;
+    border-radius: 50%;
+}
+
+.header {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-right: 10px;
+}
+
+.cerrar_sesion {
+    padding-top: 5px;
+}
+
+.cerrar_sesion img {
+    width: 25px;
+}
+
+.cerrar_sesion img:hover {
+    box-shadow: #324001;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+}
+
+.botones {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: #2c4018;
+    border-color: #e4e4e4;
+    cursor: pointer;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.botones a {
+    text-decoration: none;
+
+}
+
+button:hover {
+    background-color: #598C26;
+    color: white;
+}
+
+a img {
+    margin-right: 0.5rem;
+}
+
+.logo-sys2 {
+    display: none;
+}
+
+.logo-sys2 img{
+    height: 240px;
+}
+
+.section2 {
+    margin: 0;
+    padding: 0;
+}
+
+.container3 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.text-central {
+    display: flex;
+    justify-content: center;
+    background-color: #598C26;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+    height: 30px;
+    width: 100%;
+}
+
+.modulo1 {
+    height: 200px;
+    width: 100%;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),  url("../img/biofa.png");
+    background-size: cover;
+    background-position: center center;
+    margin: 0.5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 5px rgba(0,0,0,0.4);
+    transition: all 0.3s ease;
+    color: white;
+    border-radius: 20px;
+}
+
+.modulo1:hover {
+    box-shadow: 3px 3px 5px #3E5902;
+}
+
+.modulo2 {
+    height: 200px;
+    width: 100%;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),  url("../img/lombri.png");
+    background-size: cover;
+    background-position: center center;
+    margin: 0.5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 5px rgba(0,0,0,0.4);
+    transition: all 0.3s ease;
+    color: white;
+    border-radius: 20px;
+}
+
+.modulo2:hover {
+    box-shadow: 3px 3px 5px #3E5902;
+}
+
+.modulo3 {
+
+    height: 200px;
+    width: 100%;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),  url("../img/respel.png");
+    background-size: cover;
+    background-position: center center;
+    margin: 0.5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 5px rgba(0,0,0,0.4);
+    transition: all 0.3s ease;
+    color: white;
+    border-radius: 20px;
+}
+
+.modulo3:hover {
+    box-shadow: 3px 3px 5px #3E5902;
+}
+
+
+.modulo4 {
+
+    height: 200px;
+    width: 100%;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),  url("../img/laborat.png");
+    background-size: cover;
+    background-position: center center;
+    margin: 0.5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 5px rgba(0,0,0,0.4);
+    transition: all 0.3s ease;
+    color: white;
+    border-radius: 20px;
+}
+
+.modulo4:hover {
+    box-shadow: 3px 3px 5px #3E5902;
+}
+
+
+section div div h2 {
+    margin: 0;
+}
+
+.container3 div p {
+    margin: 1.5rem 0 0 0;
+}
+
+
+.final {
+    max-width: 1200px;
+    max-height: 120px;
+    width: 95%;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 10px;
+}
+
+.section2 div img {
+    margin: 4rem 0.3rem 2rem;
+}
+
+.section2 #final p {
+    margin: 4rem 0.3rem 2rem;
+}
+
+footer {
+    background-color: #598C26;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 50px;
+}
+
+footer a {
+    display: flex;
+    align-items: center;
+}
+
+@media (min-width:843px){
+    .usuario {
+        transition: all 0.3s ease;
+    }
+
+    .container3 {
+
+        justify-content: space-between;  
+    }
+
+    .modulo1, .modulo2, .modulo3, .modulo4 {
+        width: 49%;
+    }
+
+    .logo-sys2 {
+        display: flex;
+        padding: 16px 15% 16px 40px;
+    }
+}
