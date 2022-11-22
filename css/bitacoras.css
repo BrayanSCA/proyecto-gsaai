@@ -94,26 +94,13 @@ nav {
     padding: 1em;
 }
 
-.ventanas {
-    display: flex;
-    width: 100%;
-    border-radius: 10px 10px 0px 0px;
-    background-color: #e4e4e4;
-}
-
-.ven_nuevo, .ven_combinar, .ven_actualizar {
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
-    padding: 1px 2px;
-    margin: 0px 2px;
-}
-
-.cod_entrada {
+.cod_bitacora {
     display: flex;
     justify-content: space-between;
     padding: 15px 5px;
     align-items: center;
     background-color: #e4e4e4;
-    border-radius: 0px 0px 5px 5px;
+    border-radius: 5px;
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4)
 }
 
@@ -122,7 +109,7 @@ nav {
     height: 40px;
 }
 
-input[type="text"], select{
+input[type="text"], select, input[type="number"]{
     border: 0px;
     width: 55%;
     margin-bottom: 1em;
@@ -131,12 +118,18 @@ input[type="text"], select{
     background-color: white;
 }
 
+.label_actividad {
+    display: flex;
+    justify-content: center;
+    padding: 5px 0px;
+}
+
 input:focus{
     outline: none;
     border: 1px solid #2c4018;
 }
 
-#input_entrada {
+#input_bitacora {
     width: 20%;
     border: 0px;
     margin-bottom: 0px;
@@ -150,49 +143,19 @@ input:focus{
     border-radius: 5px;
 }
 
+.content_input_rutinarias {
+    border-bottom: #2c4018 solid 1px;
+    margin-bottom: 10px;
+}
+
+.content_input_norutinarias {
+    border-bottom: #2c4018 solid 1px;
+    margin-bottom: 10px;
+}
+
 .content_input {
     display: flex;
     justify-content: space-between;
-}
-
-.div_img_pila {
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    padding: 5px;
-}
-
-.img_pila {
-    height: 80px;
-    width: 80px;
-    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
-}
-
-.div_subir_foto {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 3px;
-    font-size: 12px;
-}
-
-form {
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
-    padding: 5px;
-    border-radius: 10px;
-    background-color: #e4e4e4;
-    margin-top: 3px;
-}
-
-.content_input_observaciones {
-    display: flex;
-    flex-direction: column;
-    padding: 5px 0px;
-}
-
-.content_input_observaciones textarea {
-    border-radius: 5px;
 }
 
 .content_table {
@@ -200,6 +163,20 @@ form {
     background-color: #e4e4e4;
     border-radius: 10px;
     margin-top: 5px;
+}
+
+.btn_agregar {
+    height: 30px;
+    width: 84px;
+    background-color: #2c4018;
+    color: white;
+    border-radius: 5px;
+    margin-left: 15px;
+}
+
+.btn_agregar:hover {
+    background-color: #598C26;
+    cursor: pointer;
 }
 
 table {
@@ -218,6 +195,48 @@ th {
 tr:nth-child(even) {
     background-color: white;
 }
+
+.div_img_mp {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+.img_mp {
+    height: 80px;
+    width: 80px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.div_subir_foto {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    font-size: 12px;
+}
+
+.content_input_observaciones {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0px;
+}
+
+.content_input_observaciones textarea {
+    border-radius: 5px;
+}
+
+form {
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #e4e4e4;
+    margin-top: 3px;
+
+}
+
 
 .content_btn_atras {
     display: flex;
@@ -250,10 +269,6 @@ tr:nth-child(even) {
 .content_btn_atras a {
     display: flex;
     align-items: center;
-}
-
-.div_enviar_datos {
-    padding-top: 10px;
 }
 
 .div_enviar_datos input {

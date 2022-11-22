@@ -214,14 +214,6 @@ th {
     color: white;
 }
 
-.th1 {
-    border-radius: 10px 0px 0px 0px;
-}
-
-.th3 {
-    border-radius: 0px 10px 0px 0px;
-}
-
 tr:nth-child(even) {
     background-color: white;
 }
@@ -257,21 +249,6 @@ tr:nth-child(even) {
 .content_btn_atras a {
     display: flex;
     align-items: center;
-}
-
-.content_agregar_mp {
-    padding: 0px 0px 10px 0px;
-}
-
-.content_agregar_mp input {
-    padding: 5px;
-    background-color: #2c4018;
-    border-radius: 5px;
-    color: white;
-}
-
-.content_agregar_mp input:hover {
-    background-color: #598C26;
 }
 
 .div_enviar_datos {

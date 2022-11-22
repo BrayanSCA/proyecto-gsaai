@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="/css/cp-actualizar.css">
+    <link rel="stylesheet" href="/css/abonos-entrada.css">
 </head>
 
 <body>
@@ -45,35 +45,28 @@
                 <img src="/icons/power.svg">
             </div>
         </div>
-
         <!--cuadro nuevo, combinar, actualizar-->
         <div class="container2">
             <div class="ventanas">
-                <div class="ven_nuevo">
-                    <p>nuevo</p>
+                <div class="ven_entradas">
+                    <p>entrada</p>
                 </div>
-                <div class="ven_combinar">
-                    <p>combinar</p>
+                <div class="ven_salidas">
+                    <p>salida</p>
                 </div>
-                <div class="ven_actualizar">
-                    <p>actualizar</p>
-                </div>
+
             </div>
             <div class="cod_entrada">
-                <label># Actualización:</label>
+                <label># Entrada:</label>
                 <input type="text" id="input_entrada" placeholder="1">
                 <input type="date" class="input_fecha">
             </div>
+
+            <!--inicio formulario-->
             <form action="post" class="mp_entrada" autocomplete="off">
-                <div class="div_img_pila">
-                    <img src="/icons/mp.svg" class="img_pila">
-                </div>
-                <div class="div_subir_foto">
-                    <input type="file">
-                    <p>subir foto pila</p>
-                </div>
+
                 <div class="content_input">
-                    <label for="select_usuario">Responsable: </label>
+                    <label for="select_usuario">Responsable:</label>
                     <select id="select_usuario">
                         <option selected>-Seleccionar usuario-</option>
                         <option value="1">Usuario ejemplo 1</option>
@@ -81,18 +74,32 @@
                         <option value="3">Usuario ejemplo 3</option>
                     </select>
                 </div>
+
                 <div class="content_input">
-                    <label for="select_pila" class="label_zona">Pila:</label>
+                    <label for="select_pila"># Pila:</label>
                     <select id="select_pila">
-                        <option selected>-Seleccione # Pila-</option>
-                        <option>Pila # 1</option>
-                        <option>Pila # 2</option>
-                        <option>Pila # 3</option>
+                        <option selected>-Seleccionar # Pila-</option>
+                        <option value="1">Pila # 1</option>
+                        <option value="2">Pila # 2</option>
+                        <option value="3">Pila # 3</option>
                     </select>
                 </div>
 
+                <div class="content_input">
+                    <label for="select_almacen">Almacen</label>
+                    <select id="select_almacen">
+                        <option selected>-Seleccionar almacen-</option>
+                        <option value="1">Almacen ejemplo 1</option>
+                    </select>
+                </div>
+
+                <div class="content_input">
+                    <label for="input_lote">cod. lote:</label>
+                    <input type="text" id="input_lote">
+                </div>
+
                 <div class="content_input_eleccion">
-                    <label for="input_mover">¿Desea cambiar la pila de zona?:</label>
+                    <label for="input_mover">¿Agrega mejoradores?</label>
                     <label for="">Si
                         <input type="radio" name="respuesta">
                     </label>
@@ -102,70 +109,45 @@
                 </div>
 
                 <div class="content_input">
-                    <label for="select_procedencia" class="label_zona">Zona: </label>
-                    <select id="select_procedencia">
-                        <option selected>-Seleccione # Zona-</option>
-                        <option>Zona 1</option>
-                        <option>Zona 2</option>
-                        <option>Zona 3</option>
+                    <label for="select_pila">¿Cúales?</label>
+                    <select id="select_pila">
+                        <option selected>-Seleccionar mejorador-</option>
+                        <option value="1">mejorador ejemplo # 1</option>
+                        <option value="2">mejorador ejemplo # 2</option>
+                        <option value="3">mejorador ejemplo # 3</option>
                     </select>
-                </div>
-                <div class="content_input">
-                    <label for="input_temperatura">Promedio °C:</label>
-                    <input type="number" id="input_temperatura">
                 </div>
 
-                <div class="content_input">
-                    <label for="select_humedad" class="label_zona">Humedad:</label>
-                    <select id="select_humedad">
-                        <option selected>-Seleccione Humedad-</option>
-                        <option>Muy húmedo</option>
-                        <option>Muy seco</option>
-                        <option>Óptimo</option>
-                    </select>
-                </div>
-                <div class="content_input">
-                    <label for="input_ph">pH:</label>
-                    <input type="number" id="input_ph">
-                </div>
-                <div class="content_input">
-                    <label for="input_volumen">Volumen m3:</label>
-                    <input type="number" id="input_volumen">
-                </div>
-                <div class="content_input">
-                    <label for="input_densidad">Densidad ton/m3:</label>
-                    <input type="number" id="input_densidad">
-                </div>
-                <div class="content_input">
-                    <label for="input_peso">Peso D*V:</label>
-                    <input type="number" id="input_peso">
-                </div>
                 <div class="content_input_observaciones">
                     <label for="observaciones" class="label_observaciones">Observaciones: </label>
                     <textarea name="observaciones" id="observaciones" maxlength="200" cols="30" rows="10"
                         placeholder="max. 200 caracteres"></textarea>
                 </div>
 
+                <div class="div_img_pila">
+                    <img src="/icons/mp.svg" class="img_pila">
+                </div>
+                <div class="div_subir_foto">
+                    <input type="file">
+                    <p>subir foto abono</p>
+                </div>
 
                 <div class="div_enviar_datos">
                     <input type="submit" value="Enviar datos">
                 </div>
+
+
             </form>
-
-
-            <div class="caja_btn_atras">
-                <div class="content_btn_atras">
-                    <a href="#" class="btn_atras"><img src="/icons/fl-izq.svg" class="icon_atras">atrás</a>
-                </div>
-            </div>
         </div>
     </main>
+
     <footer>
         <p>contacto:</p>
         <a href="https://www.google.com"><img src="/icons/facebook.svg" class="img_footer"></a>
         <a href="https://www.google.com"><img src="/icons/whatsapp.svg" class="img_footer"></a>
         <a href="https://www.google.com"><img src="/icons/email.svg" class="img_footer"></a>
     </footer>
+
 </body>
 
 </html>

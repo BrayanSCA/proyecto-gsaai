@@ -49,11 +49,11 @@
         <!--cuadro nuevo, combinar, actualizar-->
         <div class="container2">
             <div class="ventanas">
-                <div class="ven_nuevo">
-                    <p>imprimir</p>
+                <div class="div_btn_imprimir">
+                    <button>imprimir</button>
                 </div>
-                <div class="ven_combinar">
-                    <p>PDF</p>
+                <div class="div_btn_pdf">
+                    <button>pdf</button>
                 </div>
             </div>
             <form action="post" class="form_consultas" autocomplete="off">
@@ -63,10 +63,10 @@
                         <option selected>-Seleccionar consulta-</option>
                         <option value="1">Peso pilas</option>
                         <option value="2">Cantidad abono</option>
-                        <option value="3">Cambios fisicoquímicos/</option>
+                        <option value="3">Cambios fisicoquímicos</option>
                     </select>
                 </div>
-                <div class="content_input">
+                <div class="content_input_fechas">
                     <p>Rango de fechas</p>
                     <label for="desde_date">Desde:</label>
                     <input type="date" id="desde_date">
@@ -76,6 +76,8 @@
                 <div class="div_enviar_datos">
                     <input type="submit" value="Enviar datos">
                 </div>
+            </form>
+            
 
             <div class="caja_btn_atras">
                 <div class="content_btn_atras">
